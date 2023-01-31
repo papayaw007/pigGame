@@ -78,8 +78,8 @@ btnNew.addEventListener('click', function () {
   scores[0] = 0;
   scores[1] = 0;
   playing = true;
-  player0El.classList.toggle('player--active');
-  player1El.classList.toggle('player--active');
+  player0El.classList.remove('player--active');
+  player1El.classList.add('player--active');
   document.querySelector('.player--0').classList.remove('player--winner');
   document.querySelector('.player--1').classList.remove('player--winner');
   dice1.classList.add('hidden');
